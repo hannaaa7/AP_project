@@ -32,12 +32,6 @@ housing_categorical["elevator"] = housing_categorical["elevator"].map({1: "has e
 
 housing_categorical["subway"] = housing_categorical["subway"].map({1: "has subway",
                                                                    0:"no subway"})
-
-housing_categorical["renovationCondition"] = housing_categorical["renovationCondition"].map({1: "other",
-                                                                                             2: "rough",
-                                                                                             3: "Simplicity",
-                                                                                             4:"hardcover"})
-
 housing_construction = housing_categorical.copy()
 
 housing_construction = housing_construction[housing_construction.constructionTime != '未知']
