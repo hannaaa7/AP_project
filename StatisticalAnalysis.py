@@ -33,13 +33,6 @@ housing_categorical["elevator"] = housing_categorical["elevator"].map({1: "has e
 housing_categorical["subway"] = housing_categorical["subway"].map({1: "has subway",
                                                                    0:"no subway"})
 
-housing_categorical["buildingStructure"] = housing_categorical["buildingStructure"].map({1: "unknown",
-                                                                                         2: "mixed",
-                                                                                         3: "brick and wood",
-                                                                                         4:"concrete",
-                                                                                         5:"steel",
-                                                                                         6:"steel-concrete composite"})
-
 housing_categorical["renovationCondition"] = housing_categorical["renovationCondition"].map({1: "other",
                                                                                              2: "rough",
                                                                                              3: "Simplicity",
